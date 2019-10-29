@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Your IP</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <style type="text/css">
+      #Foo {
+        color: red
+      }
+      #Bar {
+        color: green
+      }
+      #Baz {
+        color: blue
+      }
+    </style>
+  </head>
+  <body>
+    <% @my_app.body.each do |line| %>
+      <p><%= line %></p>
+    <% end %>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+  </body>
+</html>
