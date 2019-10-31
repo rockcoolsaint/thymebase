@@ -10,7 +10,7 @@ class ThymeBase
 
   def body    
     new_txt = txt.dup
-    split_text = txt.split(' ')
+    split_text = txt.split(/ /)
 
     sorted_highlights = highlights.sort { |a,b| a[:start] <=> b[:start] }
 
